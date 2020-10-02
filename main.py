@@ -10,7 +10,7 @@ data = pd.read_csv('C:/Users/Juan David/PycharmProjects/pythonProject3/covidColo
 #print(data)
 df=pd.DataFrame(data)
 df.rename(columns={'ID de caso':'numero de casos'},inplace=True)
-df.groupby('sexo ')['sexo'].count().plot(kind='bar',legend="Reverse",xlabel="departamentos",ylabel="# de casos")
+df.groupby('Sexo ')['Sexo'].count().plot(kind='bar',legend="Reverse",xlabel="departamentos",ylabel="# de casos")
 plt.title("casos por sexo")
 df.groupby('Departamento o Distrito ')['numero de casos'].count().plot(kind='bar',legend="Reverse",xlabel="departamentos",ylabel="# de casos")
 plt.title("casos por departamento")
